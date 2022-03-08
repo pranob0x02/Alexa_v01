@@ -21,7 +21,7 @@ def talk(text):
 def take_command():
     try:
         with sr.Microphone() as source:
-            talk("Hi i am alexa. How can i help you....")ls
+            talk("Hi i am alexa. How can i help you....")
 
             print("Listening.........")
             voice = listener.listen(source)
