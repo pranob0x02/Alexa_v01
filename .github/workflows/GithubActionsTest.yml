@@ -31,4 +31,4 @@ jobs:
 
       # Outputs github context
       - name: Output github context
-        run: echo ${{ toJson(github) }}
+        run: echo '${{ toJson(github) }}'
