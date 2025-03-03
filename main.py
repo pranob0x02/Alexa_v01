@@ -11,7 +11,7 @@ voices = engine.getProperty("voices")
 
 engine.setProperty('rate', 150)
 # setting up new voice rate
-# engine.setProperty("voice", voices[1].id)
+engine.setProperty("voice", voices[1].id)
 
 
 # changing index, changes voices. 1 for female
