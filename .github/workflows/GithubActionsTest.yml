@@ -37,3 +37,9 @@ jobs:
 
         # skip githubActions test
         # This is just a comment which doesn't do anything!!!!
+
+      - name: upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact_test
+          path: main.py
