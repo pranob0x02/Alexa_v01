@@ -10,7 +10,7 @@ on:
 
   pull_request:
     branches: ["main"]
-    types: [opened, synchronize]
+    types: [opened, synchronize] # this is bydefault behavior
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -34,3 +34,6 @@ jobs:
       # Outputs github context
       - name: Output github context
         run: echo '${{ toJson(github.workflow) }}'
+
+        # skip githubActions test
+        # This is just a comment which doesn't do anything!!!!
