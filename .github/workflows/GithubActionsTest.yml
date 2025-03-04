@@ -17,6 +17,7 @@ on:
 
 env:
   TestEnv: "This is a test env"
+  TestEnv2: "This is a test env 2"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -39,6 +40,9 @@ jobs:
 
       - name: Testing env
         run: echo $TestEnv
+
+      - name: Testing env 2
+        run: echo ${{env.TestEnv2}}
 
         # skip githubActions test
         # This is just a comment which doesn't do anything!!!!
