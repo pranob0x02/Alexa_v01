@@ -39,7 +39,7 @@ jobs:
         run: echo '${{ toJson(github.workflow) }}'
 
       - name: Testing env
-        run: echo $TestEnv
+        run: "echo This is TestEnv: $TestEnv"
 
       - name: Testing env 2
         run: echo ${{env.TestEnv2}}
